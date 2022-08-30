@@ -1,8 +1,8 @@
 div {
   display: flex;
   flex-flow: column;
-  height: 500px;
-  width: 1400px;
+  height: 400px;
+  width: 1200px;
   margin: 1.5rem;
   border: 2px solid red;
 }
@@ -23,12 +23,16 @@ div section {
   border: 1px solid green;
 }
 div section .article-blue {
+  text-align: center;
   flex: 25%;
   border: 1px solid green;
   color: blue;
 }
 div section .article-red {
+  text-align: center;
   flex: 25%;
   border: 1px solid green;
   color: red;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
