@@ -13,6 +13,7 @@ div h1 {
   align-items: center;
   justify-content: center;
   margin: 4rem;
+  border-bottom: 3px solid blue;
 }
 div section {
   display: flex;
