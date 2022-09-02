@@ -1,0 +1,44 @@
+@import "mixin";
+
+.maincontainer {
+                display:flex;
+                flex-flow:column;
+                @include size (100vh, 100vw);
+                border:1px solid red;
+
+    .h1 {
+        @include flex (flex, center, center);
+        flex:10%;
+        font-size: large;
+    }
+    .mainsections {
+        @include flex (flex, space-around, flex-start);
+        flex:80%;
+        @include space (0.5rem, 0.5rem);
+
+        .article-blue {
+                @include color (blue, green);
+
+                p {
+                    text-align:center;
+                    @include space(0.2rem, 0.5rem);
+                }
+        }
+        .article-red {
+                    @include flex (flex, space-around, center);
+                    flex:25%;
+                    @include space (0, 0);
+
+                p {
+                    text-align:center;
+                    @include space(0.2rem, 0.5rem);
+                    @include color (red, green);
+                }
+        }
+    }
+    .footer {
+            @include flex (flex, center, center);
+            @include color (green, blue, 24px);
+            flex:10%;
+    }
+}
