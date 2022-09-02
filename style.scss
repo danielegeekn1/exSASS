@@ -1,0 +1,14 @@
+@mixin bounce ($transformb, $transforma, $tranform){
+    @if $tranforma > 40% {
+        $tranform:$transforma / $tranformb;
+                        }
+    transform:$transformb;
+    transform:$transforma;
+}
+
+.bounce {
+        @include bounce (0, -30px);
+        height:2rem;
+        width:2rem;
+        background-color:green;
+}
