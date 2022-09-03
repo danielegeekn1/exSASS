@@ -1,14 +1,37 @@
-@mixin bounce ($transformb, $transforma, $tranform){
-    @if $tranforma > 40% {
-        $tranform:$transforma / $tranformb;
-                        }
-    transform:$transformb;
-    transform:$transforma;
+@mixin bounce ($transformb, $transforma, $tranform) {
+
+    @mixin bounce($start , $distance){
+        @keyframes bounce {
+            0%,100% {transform: translateY($start); }
+            40% {transform: translateY($distance);}
+            60% {trnsform: translateY (calc($distance/2)); }
+        }
+    
+    }
+}@mixin bounce($start , $distance){
+    @keyframes bounce {
+        0%,100% {transform: translateY($start); }
+        40% {transform: translateY($distance);}
+        60% {trnsform: translateY (calc($distance/2)); }
+    }
+
 }
 
-.bounce {
-        @include bounce (0, -30px);
-        height:2rem;
-        width:2rem;
-        background-color:green;
+
+.bounce { 
+    animation-duration: 1s; 
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    @include bounce (0px , -30px);
+    
 }
+    
+    
+    .bounce { 
+        animation-duration: 1s; 
+        animation-name: bounce;
+        animation-iteration-count: infinite;
+        @include bounce (0px , -30px);
+        
+    }
+    
