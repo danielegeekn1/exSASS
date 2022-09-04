@@ -17,10 +17,14 @@
         @include space (0.5rem, 0.5rem);
 
         .article-blue {
-                @include color (blue, green);
+                    @include flex (flex, space-around, center);
+                    border:1px solid;
+                    flex:25%;
+                    @include space (0, 0);
 
                 p {
                     text-align:center;
+                    @include color (blue, green);
                     @include space(0.2rem, 0.5rem);
                 }
         }
@@ -28,6 +32,7 @@
                     @include flex (flex, space-around, center);
                     flex:25%;
                     @include space (0, 0);
+                    border:1px solid;
 
                 p {
                     text-align:center;
