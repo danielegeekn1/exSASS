@@ -1,0 +1,72 @@
+.maincontainer {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  width: 100vw;
+  border: pxtorem 16;
+  border: solid red;
+}
+.maincontainer .h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1%;
+  text-align: center;
+  font-size: large;
+}
+.maincontainer .mainsections {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 20%;
+  margin: 0.5rem;
+  gap: 0.5rem;
+}
+.maincontainer .mainsections .article-blue {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: pxtorem 16;
+  border: solid;
+  flex: 25%;
+  margin: 0;
+  gap: 0.5;
+}
+.maincontainer .mainsections .article-blue p {
+  text-align: center;
+  color: blue;
+  border-color: green;
+  font-size: 1rem;
+  margin: 0.2rem;
+  gap: 0.5rem;
+}
+.maincontainer .mainsections .article-red {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 25%;
+  margin: 0;
+  gap: 0;
+  border: pxtorem 16;
+  border: solid;
+}
+.maincontainer .mainsections .article-red p {
+  text-align: center;
+  margin: 0.2rem;
+  gap: 0.5rem;
+  color: red;
+  border-color: green;
+  font-size: 1rem;
+}
+.maincontainer .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: green;
+  border-color: blue;
+  font-size: 24px;
+  text-align: center;
+  flex: 79%;
+}
+
+/*# sourceMappingURL=style.css.map */
