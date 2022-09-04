@@ -13,7 +13,7 @@
     }
     .mainsections {
         @include flex (flex, space-around, flex-start);
-        flex:80%;
+        flex:30%;
         @include space (0.5rem, 0.5rem);
 
         .article-blue {
@@ -42,8 +42,16 @@
         }
     }
     .footer {
-            @include flex (flex, center, center);
+            @include flex (flex, center, flex-start);
             @include color (green, blue, 24px);
-            flex:10%;
+            flex:70%;
+            
+            .footerarticle {
+                            text-align:center;
+                            border:1px solid;
+                            display:flex;
+                            @include space (0.5rem, 0.5rem);
+                            @include color (green, blue, 24px);
+            }
     }
 }

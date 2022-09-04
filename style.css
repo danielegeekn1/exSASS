@@ -16,7 +16,7 @@
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
-  flex: 80%;
+  flex: 30%;
   margin: 0.5rem;
   gap: 0.5rem;
 }
@@ -57,11 +57,21 @@
 .maincontainer .footer {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   color: green;
   border-color: blue;
   font-size: 24px;
-  flex: 10%;
+  flex: 70%;
+}
+.maincontainer .footer .footerarticle {
+  text-align: center;
+  border: 1px solid;
+  display: flex;
+  margin: 0.5rem;
+  gap: 0.5rem;
+  color: green;
+  border-color: blue;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */
