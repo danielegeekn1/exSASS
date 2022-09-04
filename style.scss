@@ -5,6 +5,21 @@
         60% {trnsform: translateY (calc($distance/2));
         background-color:  random-hex(); }}}
 
+        @function random-hex(){
+            $rgb: '';
+            $i: 6;
+            @while $i > 0 {
+              $hex-unit: random(15);
+              $letters: A, B, C, D, E, F;
+              @if $hex-unit > 9 { 
+                $hex-unit: nth($letters, ($hex-unit - 9));
+              };
+              $rgb: str-insert($rgb, ("" + $hex-unit), 0);
+              $i: $i - 1;
+            }
+            @return unquote("#"+"#{$rgb}");
+        }
+
         .bg-random {
             width: 100vw;
             height: 100px;
