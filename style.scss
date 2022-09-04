@@ -1,0 +1,68 @@
+@import "mixin";
+
+%ruleh1{
+    font-size: large;
+    padding:1rem;
+    border:1px solid red;;
+}
+
+%ruleh2{
+        font-size: large;
+        padding:1rem;
+        border:1px solid red;
+}
+
+.maincontainer {
+                display:flex;
+                flex-flow:column;
+                @include size (100vh, 100vw);
+                border:1px solid red;
+
+    .h1 {
+        @include flex (flex, center, center);
+        flex:10%;
+        @extend %ruleh1;
+    }
+    
+    .h2 {
+        @include flex (flex, center, center);
+        flex:10%;
+        @extend %ruleh2;
+    }
+    
+    .mainsections {
+        @include flex (flex, space-around, flex-start);
+        flex:80%;
+        @include space (0.5rem, 0.5rem);
+
+        .article-blue {
+                    @include flex (flex, space-around, center);
+                    border:1px solid;
+                    flex:25%;
+                    @include space (0, 0);
+
+                & {
+                    text-align:center;
+                    @include color (blue, green);
+                    @include space(0.2rem, 0.5rem);
+                }
+        }
+        .article-red {
+                    @include flex (flex, space-around, center);
+                    flex:25%;
+                    @include space (0, 0);
+                    border:1px solid;
+
+                & {
+                    text-align:center;
+                    @include space(0.2rem, 0.5rem);
+                    @include color (red, green);
+                }
+        }
+    }
+    .footer {
+            @include flex (flex, center, center);
+            @include color (green, blue, 24px);
+            flex:10%;
+    }
+}
