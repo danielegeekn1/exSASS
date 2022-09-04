@@ -1,0 +1,22 @@
+@mixin color ($col, $bordercol, $font-size:1rem) {
+    color:$col;
+    border-color:$bordercol;
+    font-size:$font-size;
+
+}
+
+@mixin flex ($display, $justisfy, $align) {
+    display:$display;
+    justify-content:$justify;
+    align-items:$align;
+}
+
+@mixin size ($height, $width) {
+    height:$height;
+    width:$width;
+}
+
+@mixin space ($margin, $gap) {
+    margin:$margin;
+    gap:$gap;
+}

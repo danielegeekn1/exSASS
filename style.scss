@@ -1,13 +1,13 @@
-
-@function pxtorem ($px, $value) {
-    @return ($px / $value) * 1rem;
+@import "mixin";
+@function pxtorem ($px) {
+    @return ($px / 16) * 1rem;
 }
 
 .maincontainer {
     display:flex;
     flex-flow:column;
     @include size (100vh, 100vw);
-    border:pxtorem (36, 16);
+    border:pxtorem (16);
     border:solid red;
 
 .h1 {
@@ -22,10 +22,10 @@ flex:80%;
 
 .article-blue {
         @include flex (flex, space-around, center);
-        border:pxtorem (36, 16);
+        border:pxtorem (16);
         border:solid;
         flex:25%;
-        @include space (0, 0);
+        @include space (0, 0.5);
 
     p {
         text-align:center;
@@ -37,7 +37,7 @@ flex:80%;
         @include flex (flex, space-around, center);
         flex:25%;
         @include space (0, 0);
-        border:pxtorem (36, 16);
+        border:pxtorem (16);
         border:solid;
 
     p {
