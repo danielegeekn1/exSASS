@@ -1,14 +1,4 @@
-@mixin bounce ($transformb, $transforma, $tranform) {
-
-    @mixin bounce($start , $distance){
-        @keyframes bounce {
-            0%,100% {transform: translateY($start); }
-            40% {transform: translateY($distance);}
-            60% {trnsform: translateY (calc($distance/2)); }
-        }
-    
-    }
-}@mixin bounce($start , $distance){
+@mixin bounce($start , $distance){
     @keyframes bounce {
         0%,100% {transform: translateY($start); }
         40% {transform: translateY($distance);}
@@ -16,7 +6,6 @@
     }
 
 }
-
 
 .bounce { 
     animation-duration: 1s; 
@@ -27,11 +16,4 @@
 }
     
     
-    .bounce { 
-        animation-duration: 1s; 
-        animation-name: bounce;
-        animation-iteration-count: infinite;
-        @include bounce (0px , -30px);
-        
-    }
     

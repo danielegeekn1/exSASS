@@ -1,0 +1,35 @@
+.bounce {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    trnsform: translateY -15px;
+  }
+}
+
+.bounce {
+  animation-duration: 1s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    trnsform: translateY -15px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
